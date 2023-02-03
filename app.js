@@ -1,4 +1,6 @@
 var cat_element = document.getElementById('catgories-element');
+var more_links = document.getElementsByClassName("more-links");
+
 fetch(`https://prodapp.lifepharmacy.com/api/categories`)
   .then(response => response.json())
   .then(data => {
@@ -22,38 +24,39 @@ function categoryChildrenData(chidren_data) {
   //   data_children += '<div class="font-bold">' + chidren_data.name + '</div> '
   // }
   for (var i of chidren_data) {
-    data_children += '<div class="grid-flow-row mb-3"><div class="font-bold mb-5">' + i.name + '</div>' + sectionsData(i.sections) + '</div>'
+    data_children += '<div class="grid-flow-row mb-3"><div class="font-bold mb-5">' + i.name + '</div>' + sectionsData(i.sections, i.name) + '</div>'
   }
   return data_children;
 
 }
-function sectionsData(sectionsData) {
+function sectionsData(sectionsData, sectionName) {
   var data_section = "";
   var limit = 5;
-  if (sectionsData.length < 5) {
-    limit = sectionsData.length;
-  }
-  for (var i = 0; i < limit; i++) {
-    data_section += '<div class="mb-3">' + sectionsData[i].name + '</div>'
+  var sect_name = sectionName.replace(/\s/g, '');
+  
+  for (var i = 0; i < sectionsData.length; i++) {
+    if (i < limit) {
+      data_section += '<div class="mb-3">' + sectionsData[i].name + '</div>'
+    }
+    else {        
+      data_section += '<div class="mb-3 hidden ' + sect_name + '">' + sectionsData[i].name + '</div>'
+    }
   }
   // for(var i of sectionsData){
   //   data_section += '<div>'+i.name+'</div>';
   // }
-  if (limit === 5) {
-    data_section += '<a href="#" class="text-blue-400">More...</a>'
+  if (sectionsData.length > 5) {
+    data_section += '<a href="#" onclick="clicked(this.id)" id="'+sect_name+'" class="text-blue-400 more-links">More...</a>'
   }
   return data_section;
 }
-
-
 
 var brands_section = document.getElementById('brands-section');
 fetch(`https://prodapp.lifepharmacy.com/api/web/brands`)
   .then(response => response.json())
   .then(data => {
-    
+
     data.data.brands.map(brand_data => {
-      debugger;
 
       brands_section.innerHTML += '<div class="grid-flow-row mb-10"> <div class="flex flex-col mr-5">' +
         '<img class="mx-auto" src="' + brand_data.images.logo + '" alt="" width="150px">' +
@@ -65,3 +68,15 @@ fetch(`https://prodapp.lifepharmacy.com/api/web/brands`)
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);
   });
+
+
+  function clicked(eleId){
+    
+    var hiddenSectionElements = document.getElementsByClassName(eleId);
+    for(var className of hiddenSectionElements){
+      className.classList.remove("hidden");
+    }
+    var clicked_link = document.getElementById(eleId);
+    clicked_link.classList.add("hidden");
+  }
+

@@ -19,9 +19,17 @@
             <div class="grid grid-flow-col bg-indigo-900 p-4 hidden lg:flex md:flex gap-5">
                 <img src="https://www.lifepharmacy.com/images/logo-white.svg" alt=""
                     class="min-w-min bg-indigo-900 filter " />
-
-                <input type="text" class="my-auto  h-10 rounded-xl px-1 text-center w-full "
-                    placeholder="search for products" />
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-5 flex items-center pl-3 pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <input type="text" class="my-auto  padding-custm h-10 rounded-full  px-1 py-4 dark:placeholder-gray-400 w-full "
+                    placeholder="          search for products . . ." />
 
 
                 <div class="grid grid-flow-col w-100 gap-5  ">
@@ -72,28 +80,9 @@
                 </button>
 
                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-700  border rounded-sm transform scale-0 group-hover:scale-100 absolute 
-                    transition duration-300 ease-in-out origin-top bg-gray-200 w-60 " id="catgories-element">
+                    transition duration-300 ease-in-out origin-top bg-gray-200 w-[15.25rem] " id="catgories-element">
 
-                    <!-- <div>Facial Wash/Cleanser</div>
-                    <div>Shampoo</div>
-                    <div>Face & Lips Sunscreen</div>
-                    <div>Biotin</div>
-                    <div>Makeup Remover</div>
-                    <div>Hair Conditioner</div>
-                    <div>Body Suncreen</div>
-                    <div>Collagen</div>
-                    <div>Eye Cream</div>
-                    <div>Hair Mask</div>
-                    <div>Baby & Children Suncreen</div>
-                    <div>Hair Loss Suplements</div>
-                    <div>Exfoliators & Scrubs</div>
-                    <div>Hair Styling & Leave-in</div>
-                    <div>Tanning</div>
-                    <div>Hair Skin & Nail Formulas</div>
-                    <div>Face Toner</div>
-                    <div>Hair Coloring</div>
-                    <div>After Sun</div>
-                    <div>Hydraulic Acid</div> -->
+
 
                 </ul>
 
@@ -119,8 +108,8 @@
                         class="transform scale-0 group-hover:scale-100 absolute 
                     transition duration-150 ease-in-out origin-top hidden group-hover:flex flex-col absolute left-0 p-5 bg-gray-200 text-black w-[84rem] overflow-auto h-[30rem]">
                         <li>
-                            <div class="grid lg:grid-cols-5 gap-5" id="brands-section">
-                               
+                            <div class="grid grid-cols-5 gap-5" id="brands-section">
+
                             </div>
                         </li>
                     </ul>
@@ -227,6 +216,81 @@
             </div>
         </div>
         </div>
+        <div
+            class="rounded-xl py-5 fixed bottom-28 inset-x-0 px-5 mx-5 border border-gray-300 flex justify-between text-sm  sm:visible md:visible lg:hidden">
+            <div class="text-indigo-900 font-bold">Add your location to get an accurate delivery time</div>
+            <div class="flex justify-evenly">
+                <div class="text-pink-900 font-bold">Select your area</div>
+                <svg class="w-5 mr-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+                <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </div>
+
+
+
+
+        </div>
+        <nav
+            class="border border-gray-300  fixed bottom-0 inset-x-0  flex justify-between text-sm text-blue-900 uppercase font-mono sm:visible md:visible lg:hidden">
+
+            <a href="#" class="w-full block py-5 px-3 text-center hover:text-blue-800 transition duration-300">
+                <svg class="w-6 h-6 mb-2 mx-auto active:fill-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path class="" stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
+
+                Home
+            </a>
+
+            <a href="#" class="w-full block py-5 px-3 text-center hover:text-blue-800">
+                <svg class="w-6 h-6 mb-2 mx-auto active:fill-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                </svg>
+
+                Categories
+            </a>
+
+            <a href="#" class="w-full block py-5 px-3 text-center hover:text-blue-800">
+                <svg class="w-6 h-6 mb-2 mx-auto active:fill-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                </svg>
+
+                Prescription
+            </a>
+
+            <a href="#" class="w-full block py-5 px-3 text-center hover:text-blue-800">
+                <svg class="w-6 h-6 mb-2 mx-auto active:fill-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                </svg>
+
+
+                Profile
+            </a>
+            <a href="#" class="w-full block py-5 px-3 text-center  hover:text-blue-800">
+                <svg class="w-6 h-6 mb-2 mx-auto active:fill-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+
+
+                Cart
+            </a>
+
+        </nav>
+
 
         <!-- small screen -->
     </header>
@@ -268,6 +332,9 @@
 
         .hover-menu {
             width: 1000px;
+        }
+        .padding-custm{
+            padding: 25px;
         }
     </style>
 
