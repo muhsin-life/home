@@ -55,7 +55,7 @@ fetch(`https://prodapp.lifepharmacy.com/api/web/brands`)
     data.data.brands.map(brand_data => {
       debugger;
 
-      brands_section.innerHTML += '<div class="grid-flow-row mb-3"> <div class="flex flex-col mr-5">' +
+      brands_section.innerHTML += '<div class="grid-flow-row mb-10"> <div class="flex flex-col mr-5">' +
         '<img class="mx-auto" src="' + brand_data.images.logo + '" alt="" width="150px">' +
         '<h5 class="text-center">' + brand_data.name + '</h5>' +
         '</div></div>'
