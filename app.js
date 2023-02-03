@@ -5,7 +5,7 @@ fetch(`https://prodapp.lifepharmacy.com/api/categories`)
     data.data.map(cat_data => {
 
       cat_element.innerHTML += '<li> <button href="#" class=" w-full py-3 pr-10 pl-5 text-left flex hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;"> <span class=" flex-1">' + cat_data.name + '</span> <span class="mr-auto my-auto"> <svg class="fill-current h-4 w-4 transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"> <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg> </span> </button> ' +
-        '<ul class="bg-white border rounded-sm absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left hover-menu p-5"> ' +
+        '<ul class="bg-white border rounded-sm absolute top-0 right-0 transition duration-200 ease-in-out origin-top-left hover-menu p-5 h-[32rem] overflow-auto border border-gray-300"> ' +
         '<li class="px-3 py-1 hover:bg-gray-100 ">' +
         '<div class="grid grid-cols-4 gap-x-10 gap-y-3 grid-rows-6 cat-elements mb-10">' +
         categoryChildrenData(cat_data.children) +
