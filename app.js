@@ -80,3 +80,9 @@ fetch(`https://prodapp.lifepharmacy.com/api/web/brands`)
     clicked_link.classList.add("hidden");
   }
 
+  function hiddenOnClick(){
+    var NavElement = document.getElementById("location-selector-element");
+    NavElement.classList.add("hidden")
+
+  }
+

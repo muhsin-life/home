@@ -19,17 +19,23 @@
             <div class="grid grid-flow-col bg-indigo-900 p-4 px-8 hidden lg:flex md:flex gap-5">
                 <img src="https://www.lifepharmacy.com/images/logo-white.svg" alt=""
                     class="min-w-min bg-indigo-900 filter " />
-                <div class="relative">
-                    <div class="absolute inset-y-0 left-5 flex items-center pl-3 pointer-events-none">
-                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                        </svg>
+                <form class="flex items-center w-full ">
+                    <label for="simple-search" class="sr-only">Search</label>
+                    <div class="relative w-full">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <input type="text" id="simple-search"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-4  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 rounded-full"
+                            placeholder="Search for Products..." required>
                     </div>
-                </div>
-                <input type="text" class="my-auto  padding-custm h-10 rounded-full  px-1 py-4 dark:placeholder-gray-400 w-full "
-                    placeholder="          search for products . . ." />
+
+                </form>
 
 
                 <div class="grid grid-flow-col w-100 gap-5  ">
@@ -54,7 +60,7 @@
             </div>
             <!-- lower -->
             <div class="grid grid-cols-2 py-1 px-8 bg-pink-700 text-white text-sm lg:flex md:flex hidden">
-                <div class="text-lg"> Highest Rated Pharmacy App in UAE | Rating | Download </div>
+                <div class="text-base"> Highest Rated Pharmacy App in UAE | Rating | Download </div>
 
                 <div class="text-end ml-auto"> <span class="font-bold">DELIVER TO:</span> undefined, undefined
                     <button class="bg-white text-black rounded text-xs px-3 ml-3 py-1">CHANGE</button>
@@ -64,14 +70,15 @@
         </div>
         <div class="grid grid-cols-3 gap-4 border border-gray-300 px-8 py-1 hidden lg:flex md:flex ">
             <div class="group inline-block">
-                <button href="#" class="group-hover:bg-blue-500 py-1 group-hover:text-white hover:text-white transition-color duration-500 dropdown group"
+                <button href="#"
+                    class="group-hover:bg-blue-500 py-1 group-hover:text-white hover:text-white transition-color duration-500 dropdown group"
                     id="section_type" id="dropdownDefaultButton" data-dropdown-toggle="dropdown">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6 my-2 float-left mr-3">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
-                    
+
                     <div class="text-start mt-2 float-left mr-16">Shop by Category</div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class=" h-6 float-right mt-2 w-4">
@@ -116,7 +123,8 @@
                     </ul>
                 </div>
                 <div class="group inline-block mr-2">
-                    <button href="#" class="hover:text-blue-500 mt-1 py-1" class="group" data-dropdown-toggle="dropdown8">
+                    <button href="#" class="hover:text-blue-500 mt-1 py-1" class="group"
+                        data-dropdown-toggle="dropdown8">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="float-left mt-1 w-4 h-6 mr-3">
@@ -142,29 +150,24 @@
                                 <p class="block pr-20 pl-5 py-2 font-bold">Offer Details</p>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="block pr-20 pl-5 py-2 hover:text-blue-400">Clearance
+                                <a href="#" class="block pr-20 pl-5 py-2 hover:text-blue-400">Clearance
                                     Sale</a>
                             </li>
                             <li>
 
-                                <a href="#"
-                                    class="block pr-20 pl-5 py-2 hover:text-blue-400">Sports
+                                <a href="#" class="block pr-20 pl-5 py-2 hover:text-blue-400">Sports
                                     Nutrition</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="block pr-20 pl-5 py-2  hover:text-blue-400">Preventive
+                                <a href="#" class="block pr-20 pl-5 py-2  hover:text-blue-400">Preventive
                                     Care</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="block pr-20 pl-5 py-2 hover:text-blue-400">First
+                                <a href="#" class="block pr-20 pl-5 py-2 hover:text-blue-400">First
                                     Aid</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="block pr-20 pl-5 py-3 hover:text-blue-400">Sunshine
+                                <a href="#" class="block pr-20 pl-5 py-3 hover:text-blue-400">Sunshine
                                     Nutrition</a>
                             </li>
 
@@ -200,41 +203,136 @@
 
         <!-- small screen -->
         <div class="sm:visible md:hidden ">
-            <div class="grid grid-flow-col  bg-pink-800 text-white text-xs px-4">
-                <div>Highest Rated Pharmacy App in UAE </div>
-                <div class="text-end">Download</div>
+            <div class="grid grid-flow-col  bg-pink-800 text-white text-xs px-4 py-2">
+                <a href="#" class="flex justify-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-7 h-7 mr-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    <div class="my-auto  text-lg">Highest Rated Pharmacy App in UAE </div>
+                </a>
+
+                <div class="text-end  text-lg">Download</div>
             </div>
-            <div class="px-4 py-2 grid  grid-flow-col gap-4 ">
-                <img src="https://www.lifepharmacy.com/images/life.svg" alt="">
-                <input type="text" placeholder="search for products"
-                    class="text-center border-gray-400 border h-8 rounded-md my-auto" />
-                <img src="https://www.lifepharmacy.com/images/language.svg" alt=""
-                    class="my-auto w-7 bg-pink-700 ml-auto" />
+            <div class="px-4 py-2 flex ">
+                <img class="mr-auto" src="https://www.lifepharmacy.com/images/life.svg" alt="">
+
+                <form class="flex items-center w-3/4">
+                    <label for="simple-search" class="sr-only">Search</label>
+                    <div class="relative w-full">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <input type="text" id="simple-search"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-4  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Search for Products..." required>
+                    </div>
+
+                </form>
+                <div class="ml-auto mt-auto">
+                    <img src="https://www.lifepharmacy.com/images/svg/flag-ae.svg" alt=""
+                        class=" w-10 bg-pink-700 my-auto" />
+                    <div class="text-sm">Arabic</div>
+
+                </div>
+
             </div>
-            <div class="grid grid-flow-col  bg-indigo-900 text-white text-xs px-4 py-1">
+            <div class="grid grid-flow-col  bg-indigo-900 text-white text-xs px-4 py-2">
                 <div>DELIVER TO: undefined, undefined </div>
                 <button class="bg-white rounded text-pink-700 w-20 ml-auto">CHANGE
             </div>
         </div>
         </div>
-        <div
-            class="rounded-xl py-5 fixed bottom-28 inset-x-0 px-5 mx-5 border border-gray-300 flex justify-between text-sm  sm:visible md:visible lg:hidden">
+        <div class="rounded-xl py-5 fixed bottom-28 inset-x-0 px-5 mx-5 border border-gray-300 flex justify-between text-sm bg-white sm:visible lg:w-7/12 lg:ml-auto"
+            id="location-selector-element">
             <div class="text-indigo-900 font-bold">Add your location to get an accurate delivery time</div>
             <div class="flex justify-evenly">
-                <div class="text-pink-900 font-bold">Select your area</div>
+                <button class="text-pink-900 font-bold" data-modal-target="medium-modal"
+                    data-modal-toggle="medium-modal">Select your area</button>
                 <svg class="w-5 mr-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                 </svg>
-                <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                <button onclick="hiddenOnClick(this)">
+                    <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
             </div>
 
 
 
 
+        </div>
+
+        <div id="medium-modal" tabindex="-1"
+            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+            <div class="relative w-full h-full max-w-lg md:h-auto">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div class="flex items-center justify-between rounded-t dark:border-gray-600">
+
+                        <button type="button" 
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                            data-modal-hide="medium-modal">
+                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-6 space-y-6">
+                        <h3 class="text-2xl font-medium text-blue-400 dark:text-white text-center">
+                            Where do you want the delivery?
+                        </h3>
+                        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400 text-center">
+                            By knowing your area, we will be able to provide instant delivery from the nearest Life
+                            store around you! </p>
+                        <button class="ml-auto bg-blue-400 p-3 text-white rounded-xl w-full">Detect My Location</button>
+                        <h3 class="text-xl font-medium  text-center">
+                            OR
+                        </h3>
+
+                        <div class="flex">
+                            <button id="states-button" data-dropdown-toggle="dropdown-states"
+                                class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-500 bg-gray-100 border border-gray-300 rounded-l-lg focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
+                                type="button">
+
+                                <select id="states"
+                                    class="bg-gray-50 text-gray-900 text-sm rounded-r-lg  block w-full p-2.5 dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500">
+                                    <option selected>Ship To</option>
+                                    <option value="CA">UAE</option>
+                                    <option value="TX">KSA</option>
+                                </select>
+                            </button>
+
+                            <label for="states" class="sr-only">Type Location</label>
+                            <input type="text"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-r-lg border-l-gray-100 border-l-2  block w-full p-2.5   dark:placeholder-gray-400 dark:text-white " placeholder="Type a Location">
+                        </div>
+                        <a href="#"><h3 class="text-xl font-medium text-blue-400 dark:text-white text-center underline mt-16">
+                            Or Login Now
+                        </h3></a>
+                        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400 text-center">
+                            Get access to My Address, Orders & Prescriptions in your profile section.
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+             
+                </div>
+            </div>
         </div>
         <nav
             class="border border-gray-300  fixed bottom-0 inset-x-0  flex justify-between text-sm text-blue-900 uppercase font-mono sm:visible md:visible lg:hidden">
@@ -334,7 +432,8 @@
         .hover-menu {
             width: 1000px;
         }
-        .padding-custm{
+
+        .padding-custm {
             padding: 25px;
         }
     </style>
